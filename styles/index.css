@@ -1,0 +1,31 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+main div{
+    margin-top: 87px;
+    width: 371px;
+    height: 351px;
+}
+
+#btn-inscrever-se{
+    border: none;
+    background-color: #7ED321;
+    border-radius: 15px;
+    width: 220px;
+    height: 51px;
+    color: #1C4701;
+    padding: 13px 55px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+main img{
+    width: 640px;
+    height: 480px;
+}

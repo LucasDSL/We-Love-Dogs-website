@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div {
+    display: flex;
+    align-items: center;
+}
+
+main > div > form > div{
+    display: flex;
+    align-items: baseline;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 80px;
+    justify-content: flex-end;
+}
+input{
+    width: 418px;
+    height: 43px;
+    border-radius: 7px;
+    border: 1px solid #9F9F9F;
+    box-sizing: border-box;
+    padding: 12px 12px 12px 22px;
+    margin-top: 26px;
+}
+::-webkit-input-placeholder{ 
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+div #form-nome{
+    gap: 45px;
+}
+div #form-idade{
+    gap: 49px;
+}
+
+div #form-email{
+    gap: 44px;
+}
+
+div #form-ama-dogs{
+    gap: 14px;
+}
+
+#label-ama-dogs{
+    width: 124px;
+    height: 50px;
+    text-align: center;
+}
+
+#form-ama-dogs textarea{
+    height: 160px;
+    width: 418px;
+    resize: none;
+    border-radius: 7px;
+    border: 1px solid #9F9F9F;
+    box-sizing: border-box;
+    padding: 12px 12px 12px 22px;
+    margin-top: 26px;
+}
+
+#btn-enviar{
+    border: none;
+    background-color: #7ED321;
+    width: 141px;
+    height: 42px;
+    border-radius: 10px;
+    color: #1C4701;
+    padding: 10px 45px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}

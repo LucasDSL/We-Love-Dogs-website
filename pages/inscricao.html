@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeLoveDogs</title>
+    <!-- Importando Estilo e alterando botão da Navbar -->
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/inscricao.css">
+    <style>
+        #btn-inscrever{
+            background-color: #7ED321;
+            color: #1C4701;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a href="index.html">we<span>love</span>dogs</a></div>
+        <nav>
+            <a href="quemsomos.html" class="nav-link">QUEM SOMOS</a>
+            <a href="blog.html" class="nav-link" id="link-blog">BLOG</a>
+            <a href="inscricao.html" id="btn-inscrever">INSCREVER</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-pag">Inscrição</h1>
+        <div id="form-inscricao">
+            <form>
+                <div id="form-nome">
+                    <label for="fnome">Nome</label>
+                    <input type="text" placeholder="Seu nome">
+                </div>
+
+                <div id="form-idade">
+                    <label for="fidade">Idade</label>
+                    <input type="text" placeholder="18">
+                </div>
+
+                <div id="form-email">
+                    <label for="femail">E-mail</label>
+                    <input type="text" placeholder="exemplo@exemplo">
+                </div> 
+
+                <div id="form-ama-dogs">
+                    <label id = "label-ama-dogs" for="flong-text">Ama cachorros?</label>
+                    <textarea name="" placeholder="Mensagem"></textarea>
+                </div>
+                <div>
+                    <button id="btn-enviar">Enviar</button>
+                </div>
+            </form>
+            <div>
+                <img src="../images/Figure5.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
