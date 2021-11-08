@@ -1,70 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-* {
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
 header{
     display: flex;
     justify-content: space-between;
-    height: 120px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+header > h1{
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
-header div{
-    color: #000000;
-    font-size: 48px;
-    font-weight: 700;
-    margin-top: 27px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 header a{
     color: #000000;
 }
 
-header div span {
+header > h1 span {
     color: #7ED321;
 }
 
 header nav{
     display: flex; 
-    justify-content: center;
-    gap: 35px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
 }
-
-header nav a{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
 .nav-link{
+    font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 54px;
     color: #000000;
-    width: 112px;
-    height: 22px;
+    padding: .8rem;
+    border-radius: 1rem;
 }
-
-#link-blog{
-    width: 45px;
+.nav-link:hover{
+    background-color: black;
+    color: white;
 }
 #btn-inscrever {
     border: none;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
     background-color: rgba(126, 211, 33, 0.4);
     color: #1C4701;
-    padding: 9px 32px;
-    width: 80px;
-    border-radius: 15px;
-    height: 20px;
-    margin-top: 40px;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
     cursor: pointer;
 }
 /* Título presente na maioria das páginas */
 .titulo-pag{
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 700;
     color: #000000;
     display: flex;
-    justify-content: center;
+    align-self: center;
+}
+@media (max-width: 768px){
+    header{
+        flex-direction: column; 
+        justify-content: center;
+    }
+    header > nav{
+        width: 100%;
+    }
 }

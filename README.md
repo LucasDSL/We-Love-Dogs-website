@@ -1,4 +1,5 @@
 ## We Love Dogs 
+(Atualizando o projeto)
 - Descrição da atividade no núcleo de estudos<br>
 "O projeto WeLoveDogs tem por objetivo iniciar o aprendizado em HTML e CSS, 2 das 3 tecnnologias bases do front-end. O projeto possui o formato static multipage¹, com 4 páginas no total e a maneira de navegar e visualizar seu 
 conteúdo por completo é através dos links do menu."
