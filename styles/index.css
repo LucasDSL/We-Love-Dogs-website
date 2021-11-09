@@ -1,33 +1,47 @@
-html{
-    font-size: 62.5%;
-}
-
 main{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
     align-items: center;
+    width: 80%;
+}
+main > div{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
     font-weight: 700;
-    font-size: 4rem;
 }
-
-main div{
-    padding: 8rem 0rem;
-    width: 30vw;
-    height: 45vh;
-}
-
 #btn-inscrever-se{
-    border: none;
     background-color: #7ED321;
     border-radius: 1.5rem;
     color: #1C4701;
-    padding: 1.2rem 4rem;
+    padding: 1.2rem 2rem;
     font-weight: 700;
     cursor: pointer;
+    align-self: center;
+}
+main > img{
+    width: 60vw;
 }
 
-main img{
-    width: 45vw;
-    height: 30vw;
+@media (min-width: 768px){
+    main{
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+    }
+    main > img{
+        width: 45vw;
+    }
+}
+@media (min-width: 1000px){
+    main{
+        padding: 3rem;
+        justify-content: space-between;
+    }
+    main > div{
+        width: 40vw;
+        font-size: 4rem;
+        gap: 2rem;
+    }
 }
