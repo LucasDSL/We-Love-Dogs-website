@@ -4,21 +4,29 @@ main{
     justify-content: center;
     align-items: center;
 }
-
-main .blog-block{
+main > h1 {
+    font-size: 3rem;
+}
+.blog-block{
     display: flex;
-    width:80%;
-    margin-top: 60px;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    width: 80vw;
+    gap: 2rem;
 }
 
 .block-content > h2{
-    font-size: 32px;
+    font-size: 3rem;
     font-weight: 700;
-    color: #000000;
-    margin-bottom: 45px;
 }
 
 .block-content > p{
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (min-width: 768px){
+    .blog-block{
+        flex-direction: row;
+    }
 }
