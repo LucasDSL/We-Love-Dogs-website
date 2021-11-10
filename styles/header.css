@@ -47,14 +47,7 @@ header nav{
     border-radius: 1.5rem;
     cursor: pointer;
 }
-/* Título presente na maioria das páginas */
-.titulo-pag{
-    font-size: 4rem;
-    font-weight: 700;
-    color: #000000;
-    display: flex;
-    align-self: center;
-}
+
 @media (max-width: 768px){
     header{
         flex-direction: column; 
