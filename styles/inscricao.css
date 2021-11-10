@@ -2,78 +2,108 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
 }
-
+main > h1{
+    font-size: 3rem;
+    padding: 3rem;
+}
 main div {
     display: flex;
     align-items: center;
+    gap: 3rem;
 }
-
-main > div > form > div{
+#form-inscricao > form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#form-inscricao > img{
+    width: 40vw;
+}
+#form-inscricao > form > div{
     display: flex;
     align-items: baseline;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-left: 80px;
     justify-content: flex-end;
 }
 input{
-    width: 418px;
-    height: 43px;
+    width: 40vw;
+    height: 4rem;
     border-radius: 7px;
     border: 1px solid #9F9F9F;
     box-sizing: border-box;
-    padding: 12px 12px 12px 22px;
-    margin-top: 26px;
+    padding: 1.2rem;
+    padding-left: 2rem;
 }
 ::-webkit-input-placeholder{ 
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 
 div #form-nome{
-    gap: 45px;
+    gap: 4rem;
 }
 div #form-idade{
-    gap: 49px;
+    gap: 4rem;
 }
 
 div #form-email{
-    gap: 44px;
+    gap: 4rem;
 }
 
 div #form-ama-dogs{
-    gap: 14px;
+    gap: 1.4rem;
 }
 
 #label-ama-dogs{
-    width: 124px;
-    height: 50px;
+    width: 12rem;
     text-align: center;
 }
 
 #form-ama-dogs textarea{
-    height: 160px;
-    width: 418px;
+    height: 16rem;
+    width: 40vw;
     resize: none;
     border-radius: 7px;
     border: 1px solid #9F9F9F;
     box-sizing: border-box;
-    padding: 12px 12px 12px 22px;
-    margin-top: 26px;
+    padding: 1.2rem;
+    padding-bottom: 2.2rem;
 }
 
 #btn-enviar{
     border: none;
     background-color: #7ED321;
-    width: 141px;
-    height: 42px;
     border-radius: 10px;
     color: #1C4701;
-    padding: 10px 45px;
-    font-size: 16px;
+    padding: 1rem 4.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin-top: 20px;
     cursor: pointer;
+}
+
+@media (max-width: 768px){
+    main > div {
+        flex-direction: column-reverse;
+    }
+    #form-inscricao > form > div{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    input{
+        width: 60vw;
+    }
+    #label-ama-dogs{
+        width: 100%;
+        text-align: left;
+    }
+    #form-ama-dogs textarea{
+        width: 60vw;
+    }
+    #form-inscricao > img{
+        width: 70vw;
+    }
 }
